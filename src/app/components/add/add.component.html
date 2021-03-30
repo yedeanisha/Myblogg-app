@@ -1,0 +1,37 @@
+
+<section class="container" style="margin-top: 130px; background-color: gray;"> 
+    <form novalidate (ngSubmit)="onSave(regForm)" #regForm="ngForm">
+    <h4>Name Of your recipe</h4>
+    <input type="text" id="title" name="title" class="form-control" ngModel>
+    <br>
+    <h4>Gallery</h4>
+    <input type="url" id="url" name="url" class="form-control" placeholder="Pictures of your recipe"ngModel>
+    <br>
+    <p class="lead">write down the procedure:</p>
+    <h3>Step1:</h3>
+    <br>
+
+    <textarea type="text" id="step1" name="step1" rows="3" class="form-control"   required ngModel></textarea> 
+    <br>
+    <h3>Step2:</h3>
+    <br>
+
+    <textarea type="text" id="step2" name="step2" rows="3" class="form-control"   required ngModel></textarea>
+    <br>
+   
+    <h3>Step3:</h3>
+    <br>
+       
+
+    <textarea type="text" id="step3" name="step3" rows="3" class="form-control"   required ngModel></textarea>
+    <br>
+    <h3>Step4:</h3>
+    <br>
+
+    <textarea type="text" id="step4" name="step4" rows="4" class="form-control"   required ngModel></textarea>
+    <br>
+    <button name="save" type="submit"  color="primary" [disabled]="!regForm.valid" class="btn btn-success">
+        Save
+    </button>
+</form>
+</section>

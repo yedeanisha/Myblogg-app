@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title></title>
+    </head>   
+    <style>
+        .para{
+            font-family: 'Redressed', cursive;
+        }
+        .background{
+            height:720px;
+            background-image: url(https://i.pinimg.com/originals/03/d9/d1/03d9d18c3531291c21d864bf8ebdd9fe.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            display: flex; 
+           flex-direction: column; 
+           justify-content: center;   
+        }
+    </style>
+    <nav class="navbar  fixed-top  bg-dark">      
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="https://i.pinimg.com/474x/50/3e/41/503e4105f6b488a056591bc8f0d473bc.jpg" height="70px" width="80px">
+        </a>   
+        <h2 class="display1" style="color: #f7902f; margin-left: 40px; text-shadow: 2px  2px black; font-family: 'Lobster', cursive;">The Glutton Jurnol</h2>             
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+           <i class="bi bi-house-fill"></i>
+           <a class="nav-link" routerLink="/home">Home</a>
+          </li>
+         <li class="nav-item">
+            <i class="bi bi-cash-stack"></i>
+            <a class="nav-link" routerLink="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" routerLink="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link " routerLink="/contact">Contact</a>
+        </li>
+        </ul>
+        </nav>
+    <body>  
+    <section class="background" style="margin-top: 50px;">         
+    <p class="para container display-5"  style="background-color:white; opacity: 0.9; margin-top: 50px; font-size: large;">
+        Welcome to The Glutton Jurnol !This is  created to celebrate how nourishing, fun, and delicious cooking with seasonal fruits and vegetables can be. I hope that the recipes here inspire you to try cooking a new vegetable, or try cooking a familiar vegetable in a new way. 
+        You’ll find a host of inventive vegetarian and Non-vegetarian recipes for breakfast, lunch, and dinner  for you. 
+        We have guides to working with vegetables ranging from spaghetti squash to asparagus and tips for cooking plant-based basics like quinoa, rice, and lentils.
+        The New York Times said of The Glotton Jurnol, “Happiness itself is tossed into every bowl,” while Bon Appétit hailed it as, “the most beautiful cookbook we’ve ever seen.” The Glutton Jurnol Every Day, was featured in The New York Times Book Review’s 2019 Summer Reading List.
+        We have also developed recipes for KitchenAid, Whole Foods, Le Creuset, Anthropologie, and Crate & Barrel, among others. In addition, our work has appeared in Bon Appétit, People, O: The Oprah Magazine, Cooking Light, Self, Shape, HGTV, mindbodygreen, Food52, and more. o, while their two Shiba pups help clean up the kale stems that fall on the floor.
+        
+        A food blog with fresh, zesty recipes.          
+
+    </p>    
+</section>
+
+     
+   
+    <footer class="bg-dark text-center text-white wrapper">
+  
+        <div class="container p-4">   
+          <section class="mb-4">      
+            <a style="text-decoration: none; color:whitesmoke; font-size: 15px; padding:8px 8px 8px 8px" routerLink="/home">
+              Home      
+            </a>     
+            <a style="text-decoration: none; color:whitesmoke; font-size: 15px; padding:8px 8px 8px 8px"   routerLink="/blog">
+              Blog     
+          </a>     
+            <a style="text-decoration: none; color:whitesmoke; font-size: 15px; padding:8px 8px 8px 8px"  routerLink="/aboutus">
+            About us     
+            </a>     
+            <a  style="text-decoration: none; color:whitesmoke; font-size: 15px; padding:8px 8px 8px 8px" routerLink="/contact">
+            Contact       
+            </a>      
+            <a style="text-decoration: none; color:whitesmoke; font-size: 15px; padding:8px 8px 8px 8px"  routerLink="/add"       >
+              Create a blog
+            </a>
+      
+           
+          </section>
+          <!-- Section: Social media -->
+          <!-- Section: Form -->
+          <section class="wrapper">
+            <form action="">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+               
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control"  />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                  </div>
+                </div>          
+                <div class="col-auto">            
+                  <button type="submit" class="btn btn-outline-light mb-4" (click)="onclick()">
+                    {{name}}
+                  </button>
+                </div>
+               
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>   
+        </div>
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          All rights reserved
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+   

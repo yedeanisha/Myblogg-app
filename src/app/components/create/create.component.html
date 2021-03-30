@@ -1,0 +1,32 @@
+<style>
+    a{
+        font-size: 20px;
+    }
+</style>
+<!--nav start-->
+
+<!--navbar end-->
+<button class="btn btn-info" routerLink="/add" style="margin-top: 110px; margin-left: 550px;">Create new Blog</button>
+<section style="background-color:lavenderblush" style="margin-top: 50px;">
+        <table class="container col-sm-6">                
+            <div *ngFor="let i of items">                            
+                <div >                  
+                     <h3 style="color:rgb(10, 10, 90)">
+                     {{i.title}}
+                     </h3>                     
+                    <img src='{{i.url}}' height="350px" width="600px">
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; padding-top: 20px; ">{{i.step1}} <a [routerLink] ="['/create', i.uid]">
+                        Get full recipe>>   </a> </p>                    
+                    <h4 style="margin-top: 5px;">You can:</h4>               
+                    <button type="button" class="btn btn-info " style="margin: 5px 5px 10px 5px;"> <a [routerLink] ="['/create', i.uid]" style="text-decoration:none; color: aliceblue;">Edit</a></button> 
+                    <button type="button" class="btn btn-info"style="margin: 5px 5px 10px 5px;" (click)="onDelete(i.uid)">Delete </button>                    
+                </div>  
+            </div> 
+            <br>   
+        </table>           
+    <router-outlet></router-outlet>
+
+
+
+    
+    

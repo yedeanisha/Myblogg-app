@@ -1,0 +1,32 @@
+<style>
+    a{
+        font-size: 20px;
+    }
+</style>
+<title>MyBlog</title>
+<nav class="navbar  fixed-top  bg-dark">      
+    <a class="navbar-brand" href="#">
+        <img class="logo" src="https://i.pinimg.com/474x/50/3e/41/503e4105f6b488a056591bc8f0d473bc.jpg" height="70px" width="80px">
+    </a>   
+    <h2 class="display1" style="color: #f7902f; margin-left: 70px; text-shadow: 2px  2px black; font-family:'Times New Roman', Times, serif">The Glutton Jurnol</h2>             
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+       <i class="bi bi-house-fill"></i>
+       <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+     <li class="nav-item">
+        <i class="bi bi-cash-stack"></i>
+        <a class="nav-link" routerLink="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" routerLink="/aboutus">About Us</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link " routerLink="/contact">Contact</a>
+    </li>
+    </ul>
+    </nav>
+    
+
+<router-outlet></router-outlet>
+

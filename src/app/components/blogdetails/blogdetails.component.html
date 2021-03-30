@@ -1,0 +1,42 @@
+<style>
+    .intro{
+       background-color: rgb(167, 160, 160);
+
+    }
+</style>
+<section class="intro" style="margin-top: 80px;">
+    <div class="jumbotron jumbotron-fluid" style="height: 100px;" >
+        <div class="container">       
+        <!--bread crumb-->
+        <div class="crumb">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a routerLink='/home' style="color: black; text-decoration:none; font-size:20px ;">Home</a></li>
+              <li class="breadcrumb-item"><a routerLink='/create' style="color: black; text-decoration:none; font-size:20px ;">Back</a></li>
+             
+            </ol>
+          </nav> 
+          </div>   
+        <!--end bread cumb-->      
+        </div>
+    </div>
+<div style="background-color:chocolate;">
+<h2 style="padding: 10px 10px 10px 10px; margin-left: 500px; font-family:Georgia, 'Times New Roman', Times, serif;">{{detail.title}}</h2>
+</div>
+<section class="container">
+<img [src] = 'detail.url' width="700px" height="400px" ><br>
+<p  class="h4"style="margin:8px  ; padding:8px  ;">Just follow these steps and you are done:</p>
+<h3>Step1:</h3>
+<p style="font-family:'Times New Roman', Times, serif;">{{detail.step1}}</p>
+<h3>Step2:</h3>
+<p  style="font-family:'Times New Roman', Times, serif;">{{detail.step2}}</p>
+<h3>Step3:</h3>
+<p  style="font-family:'Times New Roman', Times, serif; ">{{detail.step3}}</p>
+<h3>Step4:</h3>
+<p style="font-family:'Times New Roman', Times, serif ; ">{{detail.step4}}</p>
+<button (click)="onedit()"  class="btn btn-success">edit </button>
+
+</section>
+</section>
+
+
